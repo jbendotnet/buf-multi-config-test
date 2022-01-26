@@ -6,4 +6,5 @@ managed:
 plugins:
   - name: go
     out: gen/proto/go
+    opt: paths=source_relative
     strategy: all
