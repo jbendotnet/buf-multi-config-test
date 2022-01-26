@@ -5,3 +5,5 @@ plugins:
   - name: php
     out: gen/proto/php
     strategy: all
+  - remote: buf.build/grpc/plugins/php
+    out: gen/proto/php

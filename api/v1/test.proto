@@ -2,6 +2,18 @@ syntax = "proto3";
 
 package v1;
 
+service AddressFinderService {
+    rpc FindAddress(FindAddressRequest) returns (FindAddressResponse);
+}
+
+message FindAddressRequest {
+    string street = 1;
+}
+
+message FindAddressResponse {
+    Address address = 1;
+}
+
 message Address {
     string street = 1;
 }
